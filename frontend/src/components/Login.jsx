@@ -36,7 +36,8 @@ function Login() {
                   className="w-80 px-3 py-1 border rounded-md outline-none"
                   {...register("email", { required: true })}
                 />
-                {errors.password && <span>This field is required</span>}
+                <br />
+                {errors.password && <span className="text-sm text-red-500">This field is required</span>}
               </div>
 
               {/* password */}
@@ -49,7 +50,8 @@ function Login() {
                   className="w-80 px-3 py-1 border rounded-md outline-none"
                   {...register("password", { required: true })}
                 />
-                {errors.password && <span>This field is required</span>}
+                <br />
+                {errors.password && <span className="text-sm text-red-500">This field is required</span>}
               </div>
               {/* button */}
               <div className="flex justify-around mt-4">
